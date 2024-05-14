@@ -1,0 +1,33 @@
+<html>
+<head>
+
+    <title>Index</title>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="//unpkg.com/aframe-extras@4.1.2/dist/aframe-extras.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://rawgit.com/takahirox/aframe-rain/master/build/aframe-rain.min.js"></script>
+
+
+</head>
+<body>
+    <a-scene>
+
+        <a-entity id="rig" movement-controls >
+            <a-entity camera look-controls="pointerLockEnabled: true;" position="0 1.8 -5" jump-ability></a-entity>
+        </a-entity>
+
+
+
+        <a-entity environment="preset: starry; lightPosition: 0 0.5 -10; skyType: color; dressing: stones; dressingScale: 4;" position="0 0.07 0"></a-entity>
+
+        <a-sphere color="green" radius="2" position="5 5 -10"></a-sphere>
+      
+        <a-plane color="#1d282f " rotation="-90 0 0" width="150" height="150"></a-plane>
+
+
+
+    </a-scene>
+</body>
+</html>
